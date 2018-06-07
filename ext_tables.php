@@ -5,6 +5,16 @@ call_user_func(
     function()
     {
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'Mnp.ExpositionMnp',
+            'P1',
+            'Expo_mnp'
+        );
+
+        $pluginSignature = str_replace('_', '', 'exposition_mnp') . '_p1';
+        $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:exposition_mnp/Configuration/FlexForms/flexform_p1.xml');
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('exposition_mnp', 'Configuration/TypoScript', 'exposition_mnp');
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_expositionmnp_domain_model_lieu', 'EXT:exposition_mnp/Resources/Private/Language/locallang_csh_tx_expositionmnp_domain_model_lieu.xlf');

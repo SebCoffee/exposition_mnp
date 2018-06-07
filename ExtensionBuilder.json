@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    98,
-                    69
+                    402,
+                    353
                 ]
             },
             "name": "New Model Object",
@@ -123,8 +123,8 @@
         {
             "config": {
                 "position": [
-                    55,
-                    454
+                    285,
+                    634
                 ]
             },
             "name": "New Model Object",
@@ -215,8 +215,8 @@
         {
             "config": {
                 "position": [
-                    32,
-                    654
+                    410,
+                    68
                 ]
             },
             "name": "New Model Object",
@@ -227,7 +227,9 @@
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
-                    "customActions": []
+                    "customActions": [
+                        "search"
+                    ]
                 },
                 "name": "Artiste",
                 "objectsettings": {
@@ -328,8 +330,8 @@
         {
             "config": {
                 "position": [
-                    99,
-                    231
+                    1139,
+                    305
                 ]
             },
             "name": "New Model Object",
@@ -461,8 +463,8 @@
         {
             "config": {
                 "position": [
-                    525,
-                    642
+                    76,
+                    236
                 ]
             },
             "name": "New Model Object",
@@ -536,8 +538,8 @@
         },
         "extensionKey": "exposition_mnp",
         "name": "exposition_mnp",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "exposition_mnp",
+        "originalVendorName": "Mnp",
         "persons": [
             {
                 "company": "LP DAWIN ALT",
@@ -558,7 +560,17 @@
                 "role": "Developer"
             }
         ],
-        "plugins": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Artiste => list,show,search\nOeuvres => list,show,highlight\nExposition=> list,show",
+                    "noncacheableActions": "Artiste => search",
+                    "switchableActions": "Agenda expositions\nExposition->list; Exposition->show;\nGalerie\nOeuvres->list;Oeuvres->show;\nMise en valeur\nOeuvres->highlight;\nListe des artistes\nArtiste->list;Artiste->show;Artiste->search;\n"
+                },
+                "key": "p1",
+                "name": "Expo_mnp"
+            }
+        ],
         "vendorName": "Mnp"
     },
     "wires": [
@@ -612,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-06-07 12:14",
+        "last_modified": "2018-06-07 03:19",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
