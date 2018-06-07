@@ -121,11 +121,10 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_oeuvres.date',
             'config' => [
-                'dbType' => 'date',
                 'type' => 'input',
                 'size' => 7,
                 'eval' => 'date,required',
-                'default' => '0000-00-00'
+                'default' => time()
             ],
         ],
         'description' => [

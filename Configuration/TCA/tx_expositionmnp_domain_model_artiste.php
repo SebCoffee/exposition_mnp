@@ -178,22 +178,20 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_artiste.date_naissance',
             'config' => [
-                'dbType' => 'date',
                 'type' => 'input',
-                'size' => 7,
-                'eval' => 'date,required',
-                'default' => '0000-00-00'
+                'size' => 10,
+                'eval' => 'datetime,required',
+                'default' => time()
             ],
         ],
         'date_deces' => [
             'exclude' => true,
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_artiste.date_deces',
             'config' => [
-                'dbType' => 'date',
                 'type' => 'input',
-                'size' => 7,
-                'eval' => 'date',
-                'default' => '0000-00-00'
+                'size' => 10,
+                'eval' => 'datetime',
+                'default' => time()
             ],
         ],
         'nationalite' => [

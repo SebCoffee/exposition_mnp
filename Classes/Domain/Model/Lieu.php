@@ -19,7 +19,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * nom
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -27,21 +27,21 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * latitude
-     * 
+     *
      * @var string
      */
     protected $latitude = '';
 
     /**
      * longitude
-     * 
+     *
      * @var string
      */
     protected $longitude = '';
 
     /**
      * adresse
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -49,7 +49,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * codePostal
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -57,7 +57,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * ville
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -65,21 +65,21 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * description
-     * 
+     *
      * @var string
      */
     protected $description = '';
 
     /**
      * accessiblePMR
-     * 
+     *
      * @var bool
      */
     protected $accessiblePMR = false;
 
     /**
      * Returns the nom
-     * 
+     *
      * @return string $nom
      */
     public function getNom()
@@ -89,7 +89,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nom
-     * 
+     *
      * @param string $nom
      * @return void
      */
@@ -100,7 +100,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the latitude
-     * 
+     *
      * @return string $latitude
      */
     public function getLatitude()
@@ -110,7 +110,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the latitude
-     * 
+     *
      * @param string $latitude
      * @return void
      */
@@ -121,7 +121,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the longitude
-     * 
+     *
      * @return string $longitude
      */
     public function getLongitude()
@@ -131,7 +131,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the longitude
-     * 
+     *
      * @param string $longitude
      * @return void
      */
@@ -142,7 +142,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the adresse
-     * 
+     *
      * @return string $adresse
      */
     public function getAdresse()
@@ -152,7 +152,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the adresse
-     * 
+     *
      * @param string $adresse
      * @return void
      */
@@ -163,7 +163,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the description
-     * 
+     *
      * @return string $description
      */
     public function getDescription()
@@ -173,7 +173,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the description
-     * 
+     *
      * @param string $description
      * @return void
      */
@@ -184,7 +184,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the accessiblePMR
-     * 
+     *
      * @return bool $accessiblePMR
      */
     public function getAccessiblePMR()
@@ -194,7 +194,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the accessiblePMR
-     * 
+     *
      * @param bool $accessiblePMR
      * @return void
      */
@@ -205,7 +205,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of accessiblePMR
-     * 
+     *
      * @return bool
      */
     public function isAccessiblePMR()
@@ -215,7 +215,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the codePostal
-     * 
+     *
      * @return string codePostal
      */
     public function getCodePostal()
@@ -225,7 +225,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the codePostal
-     * 
+     *
      * @param string $codePostal
      * @return void
      */
@@ -236,7 +236,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the ville
-     * 
+     *
      * @return string $ville
      */
     public function getVille()
@@ -246,7 +246,7 @@ class Lieu extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the ville
-     * 
+     *
      * @param string $ville
      * @return void
      */

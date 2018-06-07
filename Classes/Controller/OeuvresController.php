@@ -21,7 +21,7 @@ class OeuvresController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 {
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
@@ -32,7 +32,7 @@ class OeuvresController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * action show
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Oeuvres $oeuvres
      * @return void
      */
@@ -43,7 +43,7 @@ class OeuvresController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * action highlight
-     * 
+     *
      * @return void
      */
     public function highlightAction()

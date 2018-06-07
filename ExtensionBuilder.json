@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    402,
-                    353
+                    565,
+                    391
                 ]
             },
             "name": "New Model Object",
@@ -172,7 +172,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "date",
-                            "propertyType": "NativeDate",
+                            "propertyType": "Date",
                             "uid": "72927479029"
                         },
                         {
@@ -284,7 +284,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "dateNaissance",
-                            "propertyType": "NativeDate",
+                            "propertyType": "DateTime",
                             "uid": "1118660524173"
                         },
                         {
@@ -294,7 +294,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
                             "propertyName": "dateDeces",
-                            "propertyType": "NativeDate",
+                            "propertyType": "DateTime",
                             "uid": "178832414015"
                         }
                     ]
@@ -624,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-06-07 04:04",
+        "last_modified": "2018-06-07 04:51",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

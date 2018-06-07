@@ -21,7 +21,7 @@ class ArtisteController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 {
     /**
      * artisteRepository
-     * 
+     *
      * @var \Mnp\ExpositionMnp\Domain\Repository\ArtisteRepository
      * @inject
      */
@@ -29,7 +29,7 @@ class ArtisteController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
@@ -40,7 +40,7 @@ class ArtisteController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * action show
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Artiste $artiste
      * @return void
      */
@@ -51,7 +51,7 @@ class ArtisteController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     /**
      * action search
-     * 
+     *
      * @return void
      */
     public function searchAction()

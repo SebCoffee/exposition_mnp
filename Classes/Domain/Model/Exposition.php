@@ -19,7 +19,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * nom
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -27,7 +27,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * horaires
-     * 
+     *
      * @var string
      * @validate NotEmpty
      */
@@ -35,14 +35,14 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * descritpion
-     * 
+     *
      * @var string
      */
     protected $description = '';
 
     /**
      * visuel
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @cascade remove
      */
@@ -50,14 +50,14 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * tarif
-     * 
+     *
      * @var string
      */
     protected $tarif = '';
 
     /**
      * dateDebut
-     * 
+     *
      * @var \DateTime
      * @validate NotEmpty
      */
@@ -65,7 +65,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * dateFin
-     * 
+     *
      * @var \DateTime
      * @validate NotEmpty
      */
@@ -73,7 +73,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Le lieu
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Lieu>
      * @cascade remove
      */
@@ -81,7 +81,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * oeuvres
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres>
      * @lazy
      */
@@ -89,7 +89,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nom
-     * 
+     *
      * @return string $nom
      */
     public function getNom()
@@ -99,7 +99,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nom
-     * 
+     *
      * @param string $nom
      * @return void
      */
@@ -110,7 +110,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the horaires
-     * 
+     *
      * @return string $horaires
      */
     public function getHoraires()
@@ -120,7 +120,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the horaires
-     * 
+     *
      * @param string $horaires
      * @return void
      */
@@ -131,7 +131,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the description
-     * 
+     *
      * @return string $description
      */
     public function getDescription()
@@ -141,7 +141,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the description
-     * 
+     *
      * @param string $description
      * @return void
      */
@@ -152,7 +152,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the visuel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $visuel
      */
     public function getVisuel()
@@ -162,7 +162,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the visuel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $visuel
      * @return void
      */
@@ -173,7 +173,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the tarif
-     * 
+     *
      * @return string $tarif
      */
     public function getTarif()
@@ -183,7 +183,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the tarif
-     * 
+     *
      * @param string $tarif
      * @return void
      */
@@ -194,7 +194,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the dateDebut
-     * 
+     *
      * @return \DateTime $dateDebut
      */
     public function getDateDebut()
@@ -204,7 +204,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the dateDebut
-     * 
+     *
      * @param \DateTime $dateDebut
      * @return void
      */
@@ -215,7 +215,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the dateFin
-     * 
+     *
      * @return \DateTime $dateFin
      */
     public function getDateFin()
@@ -225,7 +225,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the dateFin
-     * 
+     *
      * @param \DateTime $dateFin
      * @return void
      */
@@ -248,7 +248,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     * 
+     *
      * @return void
      */
     protected function initStorageObjects()
@@ -259,7 +259,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Lieu
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Lieu $lieu
      * @return void
      */
@@ -270,7 +270,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Lieu
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Lieu $lieuToRemove The Lieu to be removed
      * @return void
      */
@@ -281,7 +281,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the lieu
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Lieu> $lieu
      */
     public function getLieu()
@@ -291,7 +291,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the lieu
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Lieu> $lieu
      * @return void
      */
@@ -302,7 +302,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Oeuvres
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Oeuvres $oeuvre
      * @return void
      */
@@ -313,7 +313,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Oeuvres
-     * 
+     *
      * @param \Mnp\ExpositionMnp\Domain\Model\Oeuvres $oeuvreToRemove The Oeuvres to be removed
      * @return void
      */
@@ -324,7 +324,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the oeuvres
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres> $oeuvres
      */
     public function getOeuvres()
@@ -334,7 +334,7 @@ class Exposition extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the oeuvres
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres> $oeuvres
      * @return void
      */

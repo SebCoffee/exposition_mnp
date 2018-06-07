@@ -58,7 +58,7 @@ CREATE TABLE tx_expositionmnp_domain_model_oeuvres (
 	artiste int(11) unsigned DEFAULT '0' NOT NULL,
 
 	intitule varchar(255) DEFAULT '' NOT NULL,
-	date date DEFAULT '0000-00-00',
+	date int(11) DEFAULT '0' NOT NULL,
 	description text,
 	type int(11) DEFAULT '0' NOT NULL,
 	dimensions varchar(255) DEFAULT '' NOT NULL,
@@ -104,8 +104,8 @@ CREATE TABLE tx_expositionmnp_domain_model_artiste (
 	photo int(11) unsigned NOT NULL default '0',
 	nom varchar(255) DEFAULT '' NOT NULL,
 	biographie text,
-	date_naissance date DEFAULT '0000-00-00',
-	date_deces date DEFAULT '0000-00-00',
+	date_naissance int(11) DEFAULT '0' NOT NULL,
+	date_deces int(11) DEFAULT '0' NOT NULL,
 	nationalite int(11) unsigned DEFAULT '0' NOT NULL,
 	oeuvres int(11) unsigned DEFAULT '0' NOT NULL,
 
