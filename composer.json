@@ -1,0 +1,14 @@
+{
+    "name": "mnp/exposition-mnp",
+    "type": "typo3-cms-extension",
+    "description": "projet dawin exposition par:\n-Alban MILANT\n-S\u00e9bastien NOEL\n-R\u00e9mi PACHET",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mnp\\ExpositionMnp\\": "Classes"
+        }
+    }
+}
