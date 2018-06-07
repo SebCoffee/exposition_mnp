@@ -152,8 +152,8 @@ CREATE TABLE tx_expositionmnp_domain_model_exposition (
 	description text,
 	visuel int(11) unsigned NOT NULL default '0',
 	tarif text,
-	date_debut datetime DEFAULT '0000-00-00 00:00:00',
-	date_fin datetime DEFAULT '0000-00-00 00:00:00',
+	date_debut int(11) DEFAULT '0' NOT NULL,
+	date_fin int(11) DEFAULT '0' NOT NULL,
 	lieu int(11) unsigned DEFAULT '0' NOT NULL,
 	oeuvres int(11) unsigned DEFAULT '0' NOT NULL,
 

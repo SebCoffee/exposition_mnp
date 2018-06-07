@@ -198,22 +198,20 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_exposition.date_debut',
             'config' => [
-                'dbType' => 'datetime',
                 'type' => 'input',
-                'size' => 12,
+                'size' => 10,
                 'eval' => 'datetime,required',
-                'default' => '0000-00-00 00:00:00'
+                'default' => time()
             ],
         ],
         'date_fin' => [
             'exclude' => true,
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_exposition.date_fin',
             'config' => [
-                'dbType' => 'datetime',
                 'type' => 'input',
-                'size' => 12,
+                'size' => 10,
                 'eval' => 'datetime,required',
-                'default' => '0000-00-00 00:00:00'
+                'default' => time()
             ],
         ],
         'lieu' => [

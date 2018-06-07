@@ -417,7 +417,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "dateDebut",
-                            "propertyType": "NativeDateTime",
+                            "propertyType": "DateTime",
                             "uid": "564222323074"
                         },
                         {
@@ -427,7 +427,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "dateFin",
-                            "propertyType": "NativeDateTime",
+                            "propertyType": "DateTime",
                             "uid": "1478744104013"
                         }
                     ]
@@ -624,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-06-07 03:19",
+        "last_modified": "2018-06-07 04:04",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
