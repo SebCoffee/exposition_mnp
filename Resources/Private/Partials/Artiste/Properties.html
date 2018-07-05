@@ -10,7 +10,9 @@
 	<f:format.html>{artiste.biographie}</f:format.html>
 
 	<f:for each="{artiste.oeuvres}" as="oeuvre">
-		<f:link.action action="show" arguments="{oeuvre : oeuvre}" style="text-align:center"> {oeuvre.intitule}</f:link.action>
+	<f:debug>{settings.detailPid}</f:debug>
+
+	<td><f:link.action action="show" arguments="{oeuvres : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}"> {oeuvre.intitule}</f:link.action></td>
 	</f:for>
 </div>
 </html>
