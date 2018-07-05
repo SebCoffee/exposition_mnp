@@ -17,30 +17,15 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_expositionmnp" >
-	<tr>
-		<th><f:translate key="tx_expositionmnp_domain_model_artiste.photo" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_artiste.nom" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_artiste.biographie" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_artiste.date_naissance" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_artiste.date_deces" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
+<div style="display:flex; flex-wrap:wrap;">
+  <f:for each="{artistes}" as="artiste">
+      <div style="display:flex; flex-direction:column; justify-content:center; flex-align:center; margin: 0 20px 15px 0">
+        <f:image   src="{artiste.photo.originalResource.publicUrl}" style="border-radius:50%; object-fit: cover; width: 200px; height:200px;"  />
+        <f:link.action action="show" arguments="{artiste : artiste}" style="text-align:center"> {artiste.nom}</f:link.action>
+      </div>
+  </f:for>
 
-	<f:for each="{artistes}" as="artiste">
-		<tr>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.photo.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.biographie}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.dateNaissance -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.dateDeces -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{artiste : artiste}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{artiste : artiste}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
+</div>
 
-<f:link.action action="new">New Artiste</f:link.action>
 </f:section>
 </html>

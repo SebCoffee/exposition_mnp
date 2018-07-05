@@ -1,39 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<table class="tx-exposition-mnp" >
-	<tr>
-		<td>
-			<f:translate key="tx_expositionmnp_domain_model_artiste.photo" />
-		</td>
-		<td>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_expositionmnp_domain_model_artiste.nom" />
-		</td>
-		<td>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_expositionmnp_domain_model_artiste.biographie" />
-		</td>
-		<td>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_expositionmnp_domain_model_artiste.date_naissance" />
-		</td>
-		<td>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_expositionmnp_domain_model_artiste.date_deces" />
-		</td>
-		<td>
-		</td>
-	</tr>
-</table>
+
+<div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+	<f:image   src="{artiste.photo.originalResource.publicUrl}" style=" object-fit: cover; width: 200px; height:200px;"  />
+	<h1>{artiste.nom}</h1>
+	<div style="display:flex; justify-content: space-around; width: 100%;" >
+		<p><b>Date de naissance : </b><f:format.date format="%d %B %Y">{artiste.dateNaissance}</f:format.date></p>
+		<p><b>Date de deces : </b><f:format.date format="%d %B %Y">{artiste.dateDeces}</f:format.date></p>
+	</div>
+	<f:format.html>{artiste.biographie}</f:format.html>
+
+	<f:for each="{artiste.oeuvres}" as="oeuvre">
+		<f:link.action action="show" arguments="{oeuvre : oeuvre}" style="text-align:center"> {oeuvre.intitule}</f:link.action>
+	</f:for>
+</div>
 </html>
