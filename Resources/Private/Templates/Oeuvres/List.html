@@ -22,7 +22,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 </div>
 <div class="row">
-	<f:for each="{oeuvres}" as="oeuvre">
+	<f:widget.paginate objects="{oeuvres}" as="paginatedOeuvres"
+	   configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
+	<f:for each="{paginatedOeuvres}" as="oeuvre">
 
 	  <div class="col-sm-6 col-md-4">
 	    <div class="thumbnail">
@@ -35,33 +37,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	    </div>
 	  </div>
 	</f:for>
+	</f:widget.paginate>
 
 </div>
 
-<table  class="tx_expositionmnp" >
-	<tr>
-		<th><f:translate key="tx_expositionmnp_domain_model_oeuvres.intitule" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_oeuvres.date" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_oeuvres.description" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_oeuvres.type" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_oeuvres.dimensions" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
-
-	<f:widget.paginate objects="{oeuvres}" as="paginatedOeuvres"
-	   configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
-	   <f:for each="{paginatedOeuvres}" as="oeuvre">
-		<tr>
-			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.intitule}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.date -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"><f:format.html>{oeuvre.description}</f:format.html> </f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.type}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.dimensions}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{oeuvres : oeuvre}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{oeuvres : oeuvre}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-	</f:widget.paginate>
 </f:section>
 </html>
