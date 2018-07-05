@@ -17,7 +17,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_expositionmnp" >
+<table  class="table >
 	<tr>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.nom" /></th>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.horaires" /></th>
@@ -26,8 +26,6 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.tarif" /></th>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.date_debut" /></th>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.date_fin" /></th>
-		<th> </th>
-		<th> </th>
 	</tr>
 
 	<f:for each="{expositions}" as="exposition">
@@ -39,12 +37,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.tarif}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateDebut -> f:format.date()}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateFin -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{exposition : exposition}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{exposition : exposition}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
 </table>
-
-<f:link.action action="new">New Exposition</f:link.action>
 </f:section>
 </html>
