@@ -270,3 +270,19 @@ CREATE TABLE tx_expositionmnp_exposition_oeuvres_mm (
 	KEY uid_local (uid_local),
 	KEY uid_foreign (uid_foreign)
 );
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+
+CREATE TABLE tx_expositionmnp_domain_model_nationalite (
+	date int(11) DEFAULT 0 NOT NULL
+);
+
+CREATE TABLE tx_expositionmnp_domain_model_artiste (
+	date_naissance int(11) DEFAULT 0 NOT NULL,
+	date_deces int(11) DEFAULT 0 NOT NULL
+);
+
+CREATE TABLE tx_expositionmnp_domain_model_exposition (
+	date_debut int(11) DEFAULT 0 NOT NULL,
+	date_fin int(11) DEFAULT 0 NOT NULL
+);

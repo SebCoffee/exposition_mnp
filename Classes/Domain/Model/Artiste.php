@@ -19,7 +19,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * photo
-     *
+     * 
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @cascade remove
      */
@@ -27,7 +27,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * nom
-     *
+     * 
      * @var string
      * @validate NotEmpty
      */
@@ -35,14 +35,14 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * biographie
-     *
+     * 
      * @var string
      */
     protected $biographie = '';
 
     /**
      * dateNaissance
-     *
+     * 
      * @var \DateTime
      * @validate NotEmpty
      */
@@ -50,14 +50,14 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * dateDeces
-     *
+     * 
      * @var \DateTime
      */
     protected $dateDeces = null;
 
     /**
      * nationalite
-     *
+     * 
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Nationalite>
      * @cascade remove
      */
@@ -65,7 +65,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * oeuvres
-     *
+     * 
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres>
      * @cascade remove
      */
@@ -73,7 +73,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the photo
-     *
+     * 
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $photo
      */
     public function getPhoto()
@@ -83,7 +83,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the photo
-     *
+     * 
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $photo
      * @return void
      */
@@ -94,7 +94,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nom
-     *
+     * 
      * @return string $nom
      */
     public function getNom()
@@ -104,7 +104,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nom
-     *
+     * 
      * @param string $nom
      * @return void
      */
@@ -115,7 +115,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the biographie
-     *
+     * 
      * @return string $biographie
      */
     public function getBiographie()
@@ -125,7 +125,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the biographie
-     *
+     * 
      * @param string $biographie
      * @return void
      */
@@ -136,7 +136,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the dateNaissance
-     *
+     * 
      * @return \DateTime $dateNaissance
      */
     public function getDateNaissance()
@@ -146,7 +146,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the dateNaissance
-     *
+     * 
      * @param \DateTime $dateNaissance
      * @return void
      */
@@ -157,7 +157,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the dateDeces
-     *
+     * 
      * @return \DateTime $dateDeces
      */
     public function getDateDeces()
@@ -167,7 +167,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the dateDeces
-     *
+     * 
      * @param \DateTime $dateDeces
      * @return void
      */
@@ -190,7 +190,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     *
+     * 
      * @return void
      */
     protected function initStorageObjects()
@@ -201,7 +201,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Nationalite
-     *
+     * 
      * @param \Mnp\ExpositionMnp\Domain\Model\Nationalite $nationalite
      * @return void
      */
@@ -212,7 +212,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Nationalite
-     *
+     * 
      * @param \Mnp\ExpositionMnp\Domain\Model\Nationalite $nationaliteToRemove The Nationalite to be removed
      * @return void
      */
@@ -223,7 +223,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the nationalite
-     *
+     * 
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Nationalite> $nationalite
      */
     public function getNationalite()
@@ -233,7 +233,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the nationalite
-     *
+     * 
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Nationalite> $nationalite
      * @return void
      */
@@ -244,7 +244,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Oeuvres
-     *
+     * 
      * @param \Mnp\ExpositionMnp\Domain\Model\Oeuvres $oeuvre
      * @return void
      */
@@ -255,7 +255,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Oeuvres
-     *
+     * 
      * @param \Mnp\ExpositionMnp\Domain\Model\Oeuvres $oeuvreToRemove The Oeuvres to be removed
      * @return void
      */
@@ -266,7 +266,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the oeuvres
-     *
+     * 
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres> $oeuvres
      */
     public function getOeuvres()
@@ -276,7 +276,7 @@ class Artiste extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the oeuvres
-     *
+     * 
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Mnp\ExpositionMnp\Domain\Model\Oeuvres> $oeuvres
      * @return void
      */

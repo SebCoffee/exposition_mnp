@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    565,
-                    391
+                    663,
+                    22
                 ]
             },
             "name": "New Model Object",
@@ -123,8 +123,8 @@
         {
             "config": {
                 "position": [
-                    285,
-                    634
+                    1137,
+                    20
                 ]
             },
             "name": "New Model Object",
@@ -215,8 +215,8 @@
         {
             "config": {
                 "position": [
-                    410,
-                    68
+                    414,
+                    20
                 ]
             },
             "name": "New Model Object",
@@ -284,7 +284,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "dateNaissance",
-                            "propertyType": "Date",
+                            "propertyType": "DateTime",
                             "uid": "1118660524173"
                         },
                         {
@@ -294,7 +294,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
                             "propertyName": "dateDeces",
-                            "propertyType": "Date",
+                            "propertyType": "DateTime",
                             "uid": "178832414015"
                         }
                     ]
@@ -330,8 +330,8 @@
         {
             "config": {
                 "position": [
-                    1139,
-                    305
+                    899,
+                    21
                 ]
             },
             "name": "New Model Object",
@@ -463,8 +463,8 @@
         {
             "config": {
                 "position": [
-                    76,
-                    236
+                    154,
+                    18
                 ]
             },
             "name": "New Model Object",
@@ -624,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-07-05 09:46",
+        "last_modified": "2018-07-05 11:07",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

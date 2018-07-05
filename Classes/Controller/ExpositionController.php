@@ -21,7 +21,7 @@ class ExpositionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 {
     /**
      * expositionRepository
-     *
+     * 
      * @var \Mnp\ExpositionMnp\Domain\Repository\ExpositionRepository
      * @inject
      */
@@ -29,7 +29,7 @@ class ExpositionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
     /**
      * action list
-     *
+     * 
      * @return void
      */
     public function listAction()
@@ -40,7 +40,7 @@ class ExpositionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContr
 
     /**
      * action show
-     *
+     * 
      * @param \Mnp\ExpositionMnp\Domain\Model\Exposition $exposition
      * @return void
      */
