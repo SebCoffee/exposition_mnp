@@ -33,13 +33,13 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 	<f:for each="{oeuvres}" as="oeuvre">
 		<tr>
-			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.intitule}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.date -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"><f:format.html>{oeuvre.description}</f:format.html> </f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.type}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.dimensions}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{oeuvre : oeuvre}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{oeuvre : oeuvre}">Delete</f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.intitule}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.date -> f:format.date()}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"><f:format.html>{oeuvre.description}</f:format.html> </f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.type}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.dimensions}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{oeuvres : oeuvre}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{oeuvres : oeuvre}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
 </table>
