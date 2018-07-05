@@ -57,3 +57,6 @@ plugin.tx_expositionmnp._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+page.includeCSS.exposition_mnp = EXT:exposition_mnp/Resources/Public/Css/styles.css
+plugin.tx_expositionmnp_p1.persistence.storagePid >
