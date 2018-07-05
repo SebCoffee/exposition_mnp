@@ -19,7 +19,6 @@ namespace Mnp\ExpositionMnp\Controller;
  */
 class OeuvresController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
     /**
      * OeuvresRepository
      * 

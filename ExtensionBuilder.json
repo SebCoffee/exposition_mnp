@@ -204,6 +204,16 @@
                             "propertyName": "dimensions",
                             "propertyType": "String",
                             "uid": "1043414035814"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "1326545382093"
                         }
                     ]
                 },
@@ -624,7 +634,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-07-05 11:07",
+        "last_modified": "2018-07-05 04:26",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

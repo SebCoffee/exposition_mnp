@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2018-07-05T11:07:29Z" product-name="exposition_mnp">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-07-05T16:26:24Z" product-name="exposition_mnp">
 		<header/>
 		<body>
 			<trans-unit id="tx_expositionmnp_domain_model_lieu">
@@ -47,6 +47,9 @@
 			</trans-unit>
 			<trans-unit id="tx_expositionmnp_domain_model_oeuvres.dimensions">
 				<source>Dimensions</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionmnp_domain_model_oeuvres.image">
+				<source>Image</source>
 			</trans-unit>
 			<trans-unit id="tx_expositionmnp_domain_model_artiste">
 				<source>Artiste</source>
