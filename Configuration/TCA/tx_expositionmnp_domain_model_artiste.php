@@ -179,8 +179,8 @@ return [
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_artiste.date_naissance',
             'config' => [
                 'type' => 'input',
-                'size' => 10,
-                'eval' => 'datetime,required',
+                'size' => 7,
+                'eval' => 'date,required',
                 'default' => time()
             ],
         ],
@@ -189,8 +189,8 @@ return [
             'label' => 'LLL:EXT:exposition_mnp/Resources/Private/Language/locallang_db.xlf:tx_expositionmnp_domain_model_artiste.date_deces',
             'config' => [
                 'type' => 'input',
-                'size' => 10,
-                'eval' => 'datetime',
+                'size' => 7,
+                'eval' => 'date',
                 'default' => time()
             ],
         ],

@@ -284,7 +284,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": true,
                             "propertyName": "dateNaissance",
-                            "propertyType": "DateTime",
+                            "propertyType": "Date",
                             "uid": "1118660524173"
                         },
                         {
@@ -294,7 +294,7 @@
                             "propertyIsExcludeField": true,
                             "propertyIsRequired": false,
                             "propertyName": "dateDeces",
-                            "propertyType": "DateTime",
+                            "propertyType": "Date",
                             "uid": "178832414015"
                         }
                     ]
@@ -624,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-06-07 04:51",
+        "last_modified": "2018-07-05 09:46",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
