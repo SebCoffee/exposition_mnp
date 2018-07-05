@@ -19,6 +19,15 @@ namespace Mnp\ExpositionMnp\Controller;
  */
 class OeuvresController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+
+    /**
+     * OeuvresRepository
+     * 
+     * @var \Mnp\ExpositionMnp\Domain\Repository\OeuvresRepository
+     * @inject
+     */
+    protected $oeuvresRepository = null;
+
     /**
      * action list
      * 
