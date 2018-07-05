@@ -21,7 +21,7 @@
 			<f:translate key="tx_expositionmnp_domain_model_exposition.description" />
 		</td>
 		<td>
-			{exposition.description}
+			<f:format.html>{exposition.description}</f:format.html>
 		</td>
 	</tr>
 	<tr>
@@ -61,9 +61,11 @@
 			<f:translate key="tx_expositionmnp_domain_model_exposition.oeuvres" />
 		</td>
 		<td>
-			<f:for each="{exposition.oeuvres}" as="oeuvre">
-				<f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.intitule}</f:link.action>
-			</f:for>
+			<ul>
+				<f:for each="{exposition.oeuvres}" as="oeuvre">
+					<li><f:link.action action="show" arguments="{oeuvres : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}"> {oeuvre.intitule}</f:link.action></li>
+				</f:for>
+			</ul>
 		</td>
 	</tr>
 </table>
