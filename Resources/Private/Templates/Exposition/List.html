@@ -13,11 +13,11 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Exposition</h1>
+<h1>Liste des expositions</h1>
 
 <f:flashMessages />
 
-<table  class="table >
+<table  class="table">
 	<tr>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.nom" /></th>
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.horaires" /></th>
@@ -32,7 +32,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<tr>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.nom}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.horaires}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{exposition : exposition}"> <f:format.html>{exposition.description}</f:format.html></f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.visuel.originalResource.name}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.tarif}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateDebut -> f:format.date()}</f:link.action></td>
