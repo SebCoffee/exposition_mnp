@@ -16,12 +16,17 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 <div style="display:flex; flex-wrap:wrap;">
-  <f:for each="{artistes}" as="artiste">
-      <div style="display:flex; flex-direction:column; justify-content:center; flex-align:center; margin: 0 20px 15px 0">
-        <f:image   src="{artiste.photo.originalResource.publicUrl}" style="border-radius:50%; object-fit: cover; width: 200px; height:200px;"  />
-        <f:link.action action="show" arguments="{artiste : artiste}" style="text-align:center"> {artiste.nom}</f:link.action>
-      </div>
-  </f:for>
+  
+
+  <f:widget.paginate objects="{artistes}" as="paginatedArtistes"
+     configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
+     <f:for each="{paginatedArtistes}" as="artiste">
+        <div style="display:flex; flex-direction:column; justify-content:center; flex-align:center; margin: 0 20px 15px 0">
+          <f:image   src="{artiste.photo.originalResource.publicUrl}" style="border-radius:50%; object-fit: cover; width: 200px; height:200px;"  />
+          <f:link.action action="show" arguments="{artiste : artiste}" style="text-align:center"> {artiste.nom}</f:link.action>
+        </div>
+    </f:for>
+  </f:widget.paginate>
 
 </div>
 

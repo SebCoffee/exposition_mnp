@@ -16,7 +16,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Oeuvres</h1>
+<h1>Liste des oeuvres</h1>
 
 <f:flashMessages />
 
@@ -31,7 +31,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<th> </th>
 	</tr>
 
-	<f:for each="{oeuvres}" as="oeuvre">
+	<f:widget.paginate objects="{oeuvres}" as="paginatedOeuvres"
+	   configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
+	   <f:for each="{paginatedOeuvres}" as="oeuvre">
 		<tr>
 			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.intitule}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{oeuvres : oeuvre}"> {oeuvre.date -> f:format.date()}</f:link.action></td>
@@ -42,6 +44,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="delete" arguments="{oeuvres : oeuvre}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
+	</f:widget.paginate>
+	
 </table>
 
 <f:link.action action="new">New Oeuvres</f:link.action>

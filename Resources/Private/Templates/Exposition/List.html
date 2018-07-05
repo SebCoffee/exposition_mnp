@@ -28,7 +28,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<th><f:translate key="tx_expositionmnp_domain_model_exposition.date_fin" /></th>
 	</tr>
 
-	<f:for each="{expositions}" as="exposition">
+	<f:widget.paginate objects="{expositions}" as="paginatedExpositions"
+	   configuration="{itemsPerPage: 3, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
+	   <f:for each="{paginatedExpositions}" as="exposition">
 		<tr>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.nom}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.horaires}</f:link.action></td>
@@ -39,6 +41,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateFin -> f:format.date()}</f:link.action></td>
 		</tr>
 	</f:for>
+	</f:widget.paginate>
 </table>
 </f:section>
 </html>
