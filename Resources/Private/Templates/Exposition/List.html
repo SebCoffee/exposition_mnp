@@ -17,31 +17,26 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="table">
-	<tr>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.nom" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.horaires" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.description" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.visuel" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.tarif" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.date_debut" /></th>
-		<th><f:translate key="tx_expositionmnp_domain_model_exposition.date_fin" /></th>
-	</tr>
-
 	<f:widget.paginate objects="{expositions}" as="paginatedExpositions"
 	   configuration="{itemsPerPage: 3, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
 	   <f:for each="{paginatedExpositions}" as="exposition">
-		<tr>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.horaires}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> <f:format.html>{exposition.description}</f:format.html></f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.visuel.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.tarif}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateDebut -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateFin -> f:format.date()}</f:link.action></td>
-		</tr>
+     <div class="col-sm-6 col-md-4">
+       <div class="thumbnail">
+         <f:image  class="card-img-top" src="{exposition.visuel.originalResource.publicUrl}" style=" width: 100%;
+     max-height: 200px;
+     object-fit: cover;
+     min-height: 200px;"  />
+         <div class="caption">
+           <h3>{exposition.nom}</h3>
+           <f:link.action class="btn btn-primary" action="show" arguments="{exposition : exposition}"> voir plus</f:link.action>
+         </div>
+       </div>
+     </div>
 	</f:for>
 	</f:widget.paginate>
-</table>
+
+
+
+
 </f:section>
 </html>
