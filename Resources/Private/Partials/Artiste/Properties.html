@@ -1,18 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-	<f:image   src="{artiste.photo.originalResource.publicUrl}" style=" object-fit: cover; width: 200px; height:200px;"  />
-	<h1>{artiste.nom}</h1>
-	<div style="display:flex; justify-content: space-around; width: 100%;" >
+<div style="display:flex;">
+	<f:image  class="card-img-top" src="{artiste.photo.originalResource.publicUrl}" style=" height: 100% !important; width:auto"  />
+	<div style=" border-left: 1px solid grey; margin-left: 10px; padding-left: 15px; width:100%;">
+		<h2>{artiste.nom}</h2>
 		<p><b>Date de naissance : </b><f:format.date format="%d %B %Y">{artiste.dateNaissance}</f:format.date></p>
 		<p><b>Date de deces : </b><f:format.date format="%d %B %Y">{artiste.dateDeces}</f:format.date></p>
 		<p><b>Nationnalité : </b>{artiste.nationalite.0.nom}</p>
+		<p><f:format.html>{artiste.biographie}</f:format.html></p>
+		<div style="display:flex;flex-wrap:wrap;">
+			<f:for each="{artiste.oeuvres}" as="oeuvre">
+			<f:link.action  action="show" arguments="{oeuvres : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}" style="margin:10px;display:flex; flex-direction:column;justify-content:center;align-items:center;">
+				<f:image  class="card-img-top" src="{oeuvre.image.originalResource.publicUrl}" style="width:auto; max-height: 150px;object-fit: cover;min-height: 150px;"/>
+				{oeuvre.intitule}
+			</f:link.action>
+		</f:for>
+		</div>
 	</div>
-	<f:format.html>{artiste.biographie}</f:format.html>
-
-	<f:for each="{artiste.oeuvres}" as="oeuvre">
-
-	<td><f:link.action action="show" arguments="{oeuvres : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}"> {oeuvre.intitule}</f:link.action></td>
-	</f:for>
 </div>
 </html>
