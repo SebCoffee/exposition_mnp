@@ -6,6 +6,7 @@
 	<div style="display:flex; justify-content: space-around; width: 100%;" >
 		<p><b>Date de naissance : </b><f:format.date format="%d %B %Y">{artiste.dateNaissance}</f:format.date></p>
 		<p><b>Date de deces : </b><f:format.date format="%d %B %Y">{artiste.dateDeces}</f:format.date></p>
+		<p><b>Nationnalité : </b>{artiste.nationalite.0.nom}</p>
 	</div>
 	<f:format.html>{artiste.biographie}</f:format.html>
 
