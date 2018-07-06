@@ -1,9 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 	<div style="display:flex;">
 		<f:image  class="card-img-top" src="{exposition.visuel.originalResource.publicUrl}" style=" height: 100% !important; width:auto"  />
-		<div style=" border-left: 1px solid grey; margin-left: 10px; padding-left: 15px;">
+		<div style=" border-left: 1px solid grey; margin-left: 10px; padding-left: 15px; width:100%;">
 			<h2>{exposition.nom}</h2>
-
+			<p><b>Lieu : </b>{exposition.lieu.0.nom} - {exposition.lieu.0.adresse} {exposition.lieu.0.codePostal}, {exposition.lieu.0.ville}</p>
+			<p><b>date début : </b><f:format.date format="%d %B %Y">{exposition.dateDebut }</f:format.date> - <b>date de fin : </b> <f:format.date format="%d %B %Y">{exposition.dateFin  }</f:format.date></p>
+			<p><b>Description : </b><f:format.html>{exposition.description}</f:format.html></p>
+			<div style="display:flex;flex-wrap:wrap;">
+				<f:for each="{exposition.oeuvres}" as="oeuvre">
+				<f:link.action  action="show" arguments="{oeuvres : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}" style="margin:10px;display:flex; flex-direction:column;justify-content:center;align-items:center;">
+					<f:image  class="card-img-top" src="{oeuvre.image.originalResource.publicUrl}" style="width:auto; max-height: 150px;object-fit: cover;min-height: 150px;"/>
+					{oeuvre.intitule}
+				</f:link.action>
+			</f:for>
+			</div>
 		</div>
 	</div>
 </html>
